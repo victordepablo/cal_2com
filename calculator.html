@@ -1,17 +1,24 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
-
 function inverse() {
   var num = document.getElementById("n1");
   num.value = 1/num.value;
 }
 </script>
+<script type="text/javascript">
+function square() {
+  var num = document.getElementById("n2");
+  num.value = num.value * num.value;
+}
+</script>
 </head>
 <body>
+<h1>Victor de Pablo Gozalo </h1>
   Number:
-  <input type="text" id="n1"><p>
-
-  <button onclick="inverse()"> 1/x </button>
+  <input type="text" id="n1">
+   <button onclick="inverse()"> 1/x </button>
+  <input type="text" id="n2">
+   <button onclick="square()"> x^2 </button>
 </body>
 </html>
